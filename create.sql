@@ -1,0 +1,81 @@
+CREATE TABLE Reservations (
+    roomNum INT NOT NULL,
+    reservationID VARCHAR(255) NOT NULL,
+    custID INT NOT NULL DEFAULT '0',
+    bill DECIMAL(10, 2) NOT NULL DEFAULT 0.00,
+    checkInDate DATE NOT NULL,
+    checkOutDate DATE NOT NULL,
+    PRIMARY KEY (reservationID),
+    FOREIGN KEY (roomNum) REFERENCES Room(roomNum) ON DELETE CASCADE,
+    FOREIGN KEY (custID) REFERENCES Customer(custID) ON DELETE CASCADE
+);
+
+CREATE TABLE Room (
+    roomNum INT NOT NULL,
+    floor INT NOT NULL DEFAULT 0,
+    availability BOOLEAN NOT NULL DEFAULT FALSE,
+    inclusivePackageNum VARCHAR(255) DEFAULT NULL,
+    numBeds INT DEFAULT 1,
+    roomTier VARCHAR(255) DEFAULT NULL,
+    roomView VARCHAR(255) DEFAULT NULL,
+    PRIMARY KEY (roomNum),
+    FOREIGN KEY (roomTier) REFERENCES RoomTier(roomTier)
+
+);
+
+CREATE TABLE RoomTier(
+    roomTier VARCHAR(255) DEFAULT NULL,
+    rate DOUBLE NOT NULL DEFAULT 0,
+    PRIMARY KEY (roomTier)
+);
+
+CREATE TABLE Customer (
+    custID INT NOT NULL,
+    cFName VARCHAR(255) DEFAULT NULL,
+    cLName VARCHAR(255) DEFAULT NULL,
+    cEmail VARCHAR(255) DEFAULT NULL,
+    cPhoneNum INT DEFAULT NULL,
+    cardInfo INT DEFAULT NULL,
+    billingAddress VARCHAR(255) DEFAULT NULL,
+    mmbrTier VARCHAR(255) DEFAULT NULL,
+    mmbrPoints INT DEFAULT NULL,
+    mmbrStatus BOOLEAN NOT NULL DEFAULT FALSE,
+    PRIMARY KEY (custID)
+
+);
+
+CREATE TABLE Employee (
+    empID INT NOT NULL,
+    eFName VARCHAR(255) DEFAULT NULL,
+    eLName VARCHAR(255) DEFAULT NULL,
+    eDept VARCHAR(255) DEFAULT NULL,,
+    jobTitle VARCHAR(255) DEFAULT NULL,
+    joinDate DATE DEFAULT NULL,
+    PRIMARY KEY (empID),
+    FOREIGN KEY (jobTitle) REFERENCES JobTitle(jobTitle) ON DELETE CASCADE
+);
+
+CREATE TABLE Essn (
+    empSSN INT NOT NULL,
+    empID INT NOT NULL,
+    PRIMARY KEY (empSSN),
+    FOREIGN KEY (empID) REFERENCES Employee (empID)
+);
+
+CREATE TABLE JobTitle (
+    jobTitle VARCHAR(255) DEFAULT NULL,
+    payRate INT DEFAULT 0,
+    PRIMARY KEY (jobTitle)
+);
+
+CREATE TABLE Hotel (
+    hno INT NOT NULL,
+    hlocation CHAR(255) DEFAULT NULL,
+    managerSSN INT DEFAULT NULL,
+    ownerSSN INT DEFAULT NULL,
+    numRooms INT DEFAULT 0,
+    numEmps INT DEFAULT 0,
+    PRIMARY KEY (hno),
+    FOREIGN KEY (managerSSN) REFERENCES Employee(empSSN) ON DELETE CASCADE,
+    FOREIGN KEY (ownerSSN) REFERENCES Employee(empSSN) ON DELETE CASCADE
+);

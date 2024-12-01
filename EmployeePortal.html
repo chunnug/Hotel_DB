@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Employee Portal</title>
+</head>
+<body>
+    <h1>Employee Portal</h1>
+
+    <h2>View Reservations</h2>
+    <form action="viewReservation.php" method="post">
+        <label for="reservationID">Reservation ID:</label>
+        <input type="text" id="reservationID" name="reservationID" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <h2>View Room Info</h2>
+    <form action="viewRoomInfo.php" method="post">
+        <label for="roomNum">Room Number:</label>
+        <input type="text" id="roomNum" name="roomNum" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <h2>Manage Reservations</h2>
+    <form action="addReservation_E.php" method="post">
+        <h3>Add Reservation</h3>
+        <label for="custID">Customer ID:</label>
+        <input type="text" id="custID" name="custID" required>
+        <label for="roomNum">Room Number:</label>
+        <input type="text" id="roomNum" name="roomNum" required>
+        <label for="checkInDate">Check-In Date:</label>
+        <input type="date" id="checkInDate" name="checkInDate" required>
+        <label for="checkOutDate">Check-Out Date:</label>
+        <input type="date" id="checkOutDate" name="checkOutDate" required>
+        <button type="submit">Add</button>
+    </form>
+
+    <form action="deleteReservation.php" method="post">
+        <h3>Delete Reservation</h3>
+        <label for="reservationIDDelete">Reservation ID:</label>
+        <input type="text" id="reservationIDDelete" name="reservationID" required>
+        <button type="submit">Delete</button>
+    </form>
+
+    <form action="editReservation.php" method="post">
+        <h3>Edit Reservation</h3>
+        <label for="reservationIDEdit">Reservation ID:</label>
+        <input type="text" id="reservationIDEdit" name="reservationID" required>
+        <label for="roomNumEdit">Room Number:</label>
+        <input type="text" id="roomNumEdit" name="roomNum" required>
+        <label for="checkInDateEdit">Check-In Date:</label>
+        <input type="date" id="checkInDateEdit" name="checkInDate" required>
+        <label for="checkOutDateEdit">Check-Out Date:</label>
+        <input type="date" id="checkOutDateEdit" name="checkOutDate" required>
+        <button type="submit">Edit</button>
+    </form>
+
+    <!-- Updated button to view the employee profile -->
+    <h2>Employee Profile</h2>
+    <button onclick="location.href='EmployeeProfile.php'">View Profile</button>
+
+    <!-- Logout Button -->
+    <h2>Logout</h2>
+    <button onclick="location.href='index.html'">Logout</button>
+</body>
+</html>
+
