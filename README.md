@@ -16,10 +16,25 @@
  # Database Schema
  ![image](https://github.com/user-attachments/assets/50310d44-e28e-4173-9b82-4441d124c585)
  # Deliverables
- | First Header  | Second Header |
+ | Deliverable  | Description |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| 0  | Decide teams, create database project idea  |
+| 1  | Problem statement, generate target users, describe four relation tables (Customer,Employee, Reservation, Hotel)  |
+| 2  | Database schema  |
+| 3  | Data normalization in 3NF, HTML skeleton forms, relation tables in SQL  |
+| 4  | Link front-end (HTML) with back-end (SQL) using local host and XAMPP, created demo and presentation  |
+| 5  | Final Report  |
+# Demo
+
+
+https://github.com/user-attachments/assets/b076e0ad-f3f1-4a70-a6d9-97f56035c3d8
+
+# Acknowledgements
+Chunnu Ghimire – 3NF Data normalization, employeeLogin.html, employeelogin.php integration of all files, Employee.dat
+Ameya Sansguiri – HTML skeleton forms, Create & Load SQL files, CustomerLogin.html, addReservation.php, CustomerLoginDB.php, customerPage.html, index.html, reserve.php, viewReservations.php, Customer.dat
+Suha Tariq – 3NF Data normalization, index.php
+Rehma Uzair – HTML skeleton forms, Essn.dat, Hotel.dat, JobTitle.dat, Reservations.dat, Room.dat, RoomTier.dat
+
 
 
 
