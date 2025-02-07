@@ -1,10 +1,10 @@
 # Hotel Database System
  A web-based system that enables hotel staff to manage reservations, room availability, and customer details using a SQL database.
  # Tech Stack & Tools
- Backend: PHP
- Frontend: HTML
- Database: MySQL
- Diagrams: Draw.io
+ Backend: PHP <br>
+ Frontend: HTML <br>
+ Database: MySQL <br>
+ Diagrams: Draw.io <br>
  #  MVP Features
  - User authentication (login for staff & customers) <br>
  - Room information storage (room numbers, types, availability) <br>
