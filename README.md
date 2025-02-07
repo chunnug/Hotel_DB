@@ -6,11 +6,11 @@
  Database: MySQL
  Diagrams: Draw.io
  #  MVP Features
- -User authentication (login for staff & customers)
- -Room information storage (room numbers, types, availability)
- -Room availability tracking
- -Reservation management (creating, updating, and deleting reservations)
- -Staff & Customer information storage (name, contact info, SSN, etc)
+ -User authentication (login for staff & customers) <br>
+ -Room information storage (room numbers, types, availability) <br>
+ -Room availability tracking <br>
+ -Reservation management (creating, updating, and deleting reservations) <br>
+ -Staff & Customer information storage (name, contact info, SSN, etc) <br>
  # ER Diagram
  ![image](https://github.com/user-attachments/assets/56d36540-15f9-43ac-9263-c51d8c3c6698)
  # Database Schema
