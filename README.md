@@ -30,10 +30,10 @@
 https://github.com/user-attachments/assets/b076e0ad-f3f1-4a70-a6d9-97f56035c3d8
 
 # Acknowledgements
-Chunnu Ghimire – 3NF Data normalization, employeeLogin.html, employeelogin.php integration of all files, Employee.dat
-Ameya Sansguiri – HTML skeleton forms, Create & Load SQL files, CustomerLogin.html, addReservation.php, CustomerLoginDB.php, customerPage.html, index.html, reserve.php, viewReservations.php, Customer.dat
-Suha Tariq – 3NF Data normalization, index.php
-Rehma Uzair – HTML skeleton forms, Essn.dat, Hotel.dat, JobTitle.dat, Reservations.dat, Room.dat, RoomTier.dat
+Chunnu Ghimire – 3NF Data normalization, employeeLogin.html, employeelogin.php, Employee.dat, integration of all HTML/PHP/SQL files using XAMPP <br>
+Ameya Sansguiri – HTML skeleton forms, Create.SQL, Load.SQL, CustomerLogin.html, addReservation.php, CustomerLoginDB.php, customerPage.html, index.html, reserve.php, viewReservations.php, Customer.dat <br>
+Suha Tariq – EmployeeProfile.php <br>
+Rehma Uzair – HTML skeleton forms, Essn.dat, Hotel.dat, JobTitle.dat, Reservations.dat, Room.dat, RoomTier.dat, EmployeePortal.html, addReservation_E.php. DeleteReservation.php, editReservation.php <br>
 
 
 
